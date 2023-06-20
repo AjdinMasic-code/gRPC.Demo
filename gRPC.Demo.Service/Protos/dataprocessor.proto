@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC.Demo.Service";
+
+package dataprocessor;
+
+// The greeting service definition.
+service DataProcessor {
+  // Sends a greeting
+  rpc ProcessRegistration(RegistrationRequest) returns (RegistrationReply);
+}
+
+// The request message containing the user's name.
+message RegistrationRequest {
+  string firstname = 1;
+  string lastname = 2;
+  string businessName = 3;
+  int32 yearsInBusiness = 4;
+  bool isActive = 5;
+}
+
+// The response message containing the greetings.
+message RegistrationReply {
+  int64 employerId = 1;
+  string businessName = 2;
+  bool isActive = 3;
+  bool isRegistrationComplete = 4;
+}
