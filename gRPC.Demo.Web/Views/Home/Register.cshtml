@@ -1,0 +1,37 @@
+﻿@model RegistrationReply
+@{
+    ViewData["Title"] = "Registration Complete Page";
+}
+
+
+<h1>Registration is complete</h1>
+
+<p>Here is the content you posted via gRPC:</p>
+
+    <p>Business Name:</p>
+    @Model.BusinessName
+
+<br />
+<br />
+<div class="form-group">
+    <p>Is Employer Account Active?</p>
+    @{
+        var isActiveText = Model.IsActive ? "Yes" : "No";
+    }
+    @isActiveText
+</div>
+<br />
+<br />
+<div class="form-group">
+    <p>An id we "generated":</p>
+    @Model.EmployerId
+</div>
+<br />
+<br />
+<div class="form-group">
+<p>Is registration complete?</p>
+@{
+    var isCompleteText = Model.IsRegistrationComplete ? "Yes" : "No";
+}
+@isCompleteText
+</div>
