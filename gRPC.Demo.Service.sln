@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.Demo.Service", "gRPC.Demo.Service\gRPC.Demo.Service.csproj", "{96CDDDFD-68AC-4819-B328-CFF75782EA49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPC.Demo.Service", "gRPC.Demo.Service\gRPC.Demo.Service.csproj", "{96CDDDFD-68AC-4819-B328-CFF75782EA49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.Demo.Client", "gRPC.Client.Service\gRPC.Demo.Client.csproj", "{412BDC0C-B8ED-4E11-A600-A528465CA6ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPC.Demo.Client", "gRPC.Client.Service\gRPC.Demo.Client.csproj", "{412BDC0C-B8ED-4E11-A600-A528465CA6ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.Demo.Web", "gRPC.Demo.Web\gRPC.Demo.Web.csproj", "{33947F03-CBFB-424B-B76D-91124789EDC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPC.Demo.Web", "gRPC.Demo.Web\gRPC.Demo.Web.csproj", "{33947F03-CBFB-424B-B76D-91124789EDC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

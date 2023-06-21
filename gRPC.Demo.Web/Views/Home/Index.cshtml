@@ -1,8 +1,34 @@
-﻿@{
+﻿@model RegistrationViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@using (Html.BeginForm("Register", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(x => x.BusinessName)
+        @Html.TextBoxFor(x => x.BusinessName, new{@class="form-control"})
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.FirstName)
+        @Html.TextBoxFor(x => x.FirstName, new{@class="form-control"})
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.LastName)
+        @Html.TextBoxFor(x => x.LastName, new{@class="form-control"})
+    </div>
+
+    <div class="form-check">
+        @Html.LabelFor(x => x.IsActive, new{@class="form-check-label"})
+        @Html.CheckBoxFor(x => x.IsActive, new{@class="form-check-input"})
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.YearsInBusiness)
+        @Html.TextBoxFor(x => x.YearsInBusiness, new{@class="form-control"})
+    </div>
+
+    <button type="submit" class="primary">Register</button>
+}
